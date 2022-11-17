@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+:root {
+    --light-txt: #ffffff;
+    --main-background: #8a8f93;
+    --main-background-light:#c8d1da ;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    position: relative;
+    background-image: url("../images/hader_background1_recall.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 40%;
+    height: 100%;
+
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-txt);
+    list-style: none;
+}
+
+.nav-list__item:not(:last-child) {
+    margin-right: 76px;
+}
+
+.link__item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: var(--light-txt);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.link__item:hover,
+.link__item:active {
+    color: wheat;
+}
+
+/*WELCOME SECTION*/
+.header {
+    height: 20%;
+}
+
+/*.welcome-section-height {*/
+/*    height: 100%;*/
+/*}*/
+
+.welcome {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr;
+    /*grid-column-gap: 0px;*/
+    /*grid-row-gap: 0px;*/
+    justify-content: space-between;
+    height: 80vh;
+}
+
+
+.welcome__promo_about {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+}
+
+.welcome__promo_phrase {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.welcome__picture {
+    align-self: end;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.welcome__promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-links__item {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-decoration: none;
+    color: white;
+}
+
+.welcome__picture{
+    align-self: start;
+}
+
+.welcome__picture_img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+/*BUTTON*/
+
+.myButton {
+    box-shadow: 0 0 0 0 #0e0f0e;
+    background-color: #000000;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #111211;
+    margin: 10px;
+    width: 70px;
+}
+
+.myButton:hover {
+    background-color: #afb5b8;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*ABOUT*/
+
+.about, .projects {
+    background-color: var(--main-background);
+}
+
+.section-heading {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.about-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.about-item {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.about-item h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 35px;
+}
+
+.about-item div {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*PROJECTS*/
+.project-hading {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 35px;
+}
+
+.images__portf{
+    display: flex;
+    height: 450px;
+    justify-content: space-around;
+}
+
+.protf__item{
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+/*PRICE*/
+.price{
+    background-color: var(--main-background-light);
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.price__items{
+    display: flex;
+    gap: 35px;
+
+}
+
+.tarif_features_list{
+    padding-left: 15px;
+}
+
+.list-item{
+
+}
+
+.actual_price{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    background-color: black;
+}
+
+.button__price{
+    margin: 0;
+}
+
+/*ОТЗЫВЫ*/
+.testimonials{
+    background-color: var(--main-background);
+
+}
+
+.testimonial__heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.testimonials__items{
+    display: flex;
+    gap: 20px;
+}
+
+.item__text{
+    padding: 25px;
+}
+
+.item__signature{
+    padding: 25px;
+    font-weight: bold;
+}
+
+
+/*ABOUT STUDIO*/
+
+.about_studio{
+    background-color: var(--main-background-light);
+    padding: 40px 0;
+}
+
+.about_studio-items{
+    display: flex;
+    align-items: center;
+}
+
+.about_subitem{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.about_number{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+font-size: 60px;
+}
+
+.about_subitem_text{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+
+/*FOOTER*/
+.contacts{
+    background-color: var(--main-background);
+}
+.footer_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+
+}
+
+.footer_section_item{
+padding: 35px;
+}
+
+.links{
+    padding: 15px;
+}
+
+.links__item{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.allrights{
+    padding: 15px;
+}
