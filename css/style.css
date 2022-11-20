@@ -130,7 +130,7 @@ html {
 .welcome__promo_about {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     padding: 10px;
 }
@@ -186,12 +186,13 @@ html {
     cursor: pointer;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 21px;
+    /*font-weight: bold;*/
     padding: 16px 31px;
     text-decoration: none;
     text-shadow: 0 1px 0 #111211;
     margin: 10px;
-    width: 70px;
+
 }
 
 .myButton:hover {
@@ -247,7 +248,7 @@ html {
 /*PROJECTS*/
 .project-hading {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 35px;
 }
@@ -299,7 +300,7 @@ html {
 
 .actual_price {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .order {
