@@ -1,16 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
 
+@font-face {
+    font-family: 'Acherus Grotesque';
+    src: local('Acherus Grotesque Regular'), local('Acherus-Grotesque-Regular'),
+    url('../assets/AcherusGrotesque-Regular.woff2') format('woff2'),
+    url('../assets/AcherusGrotesque-Regular.woff') format('woff'),
+    url('../assets/AcherusGrotesque-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmsterdamHandwriting';
+    src: local('AmsterdamHandwriting Regular'), local('AmsterdamHandwriting'),
+    url('../assets/AmsterdamHandwriting.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --light-txt: #ffffff;
     --main-background: #8a8f93;
-    --main-background-light:#c8d1da ;
+    --main-background-light: #c8d1da;
 }
 
 body,
 html {
     width: 100%;
     height: 100%;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Acherus Grotesque", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -34,6 +52,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 }
 
 .header__logo {
@@ -58,7 +77,7 @@ html {
 }
 
 .link__item {
-    font-family: Roboto;
+    font-family: Acherus Grotesque;
     font-style: normal;
     font-weight: 200;
     font-size: 22px;
@@ -95,7 +114,7 @@ html {
 
 
 .welcome__promo_about {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Acherus Grotesque', serif;
     letter-spacing: 2px;
     font-size: 60px;
     color: white;
@@ -103,7 +122,7 @@ html {
 }
 
 .welcome__promo_phrase {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'AmsterdamHandwriting';
     font-size: 30px;
     color: white;
     padding: 10px;
@@ -133,7 +152,7 @@ html {
     color: white;
 }
 
-.welcome__picture{
+.welcome__picture {
     align-self: start;
 }
 
@@ -147,12 +166,12 @@ html {
 
 .myButton {
     box-shadow: 0 0 0 0 #0e0f0e;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #6c86a1;
+    border: 1px solid #6c86a1;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
+    font-family: 'Acherus Grotesque';
     font-size: 17px;
     padding: 16px 31px;
     text-decoration: none;
@@ -179,7 +198,7 @@ html {
 
 .section-heading {
     font-size: 60px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Acherus Grotesque', serif;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
 }
@@ -188,7 +207,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 350px;
+    height: 43vh;
 }
 
 .about-item {
@@ -200,39 +219,38 @@ html {
 
 .about-item h2 {
     font-size: 30px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Acherus Grotesque', serif;
     padding-bottom: 35px;
 }
 
 .about-item div {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Acherus Grotesque', sans-serif;
 }
-
 
 
 /*PROJECTS*/
 .project-hading {
     text-align: center;
     font-size: 60px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Acherus Grotesque', serif;
     margin-bottom: 35px;
 }
 
-.images__portf{
+.images__portf {
     display: flex;
     height: 450px;
     justify-content: space-around;
 }
 
-.protf__item{
+.protf__item {
     max-width: 100%;
     height: auto;
     padding: 20px 0;
 }
 
 /*PRICE*/
-.price{
+.price {
     background-color: var(--main-background-light);
 }
 
@@ -243,62 +261,68 @@ html {
     height: 350px;
 }
 
-.price__items{
+.price__items {
     display: flex;
     gap: 35px;
 
 }
 
-.tarif_features_list{
+.tarif_features_list {
     padding-left: 15px;
 }
 
-.list-item{
+.list-item {
 
 }
 
-.actual_price{
+.actual_price {
     font-weight: bold;
     font-size: 30px;
 }
 
-.order{
+.order {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-hr{
+hr {
     background-color: black;
 }
 
-.button__price{
+.button__price {
     margin: 0;
+    background: black;
+    border: 1px solid black;
 }
 
 /*ОТЗЫВЫ*/
-.testimonials{
+.testimonials {
     background-color: var(--main-background);
 
 }
 
-.testimonial__heading{
-    font-family: 'Montserrat', sans-serif;
+.testimonial__heading {
+    font-family: 'Acherus Grotesque', sans-serif;
     font-size: 30px;
     color: white;
     padding: 10px;
+    color: black;
+    text-align: center;
+    /*display: inline-block;*/
+    /*padding-left: 200px;*/
 }
 
-.testimonials__items{
+.testimonials__items {
     display: flex;
     gap: 20px;
 }
 
-.item__text{
+.item__text {
     padding: 25px;
 }
 
-.item__signature{
+.item__signature {
     padding: 25px;
     font-weight: bold;
 }
@@ -306,66 +330,67 @@ hr{
 
 /*ABOUT STUDIO*/
 
-.about_studio{
+.about_studio {
     background-color: var(--main-background-light);
     padding: 40px 0;
 }
 
-.about_studio-items{
+.about_studio-items {
     display: flex;
     align-items: center;
 }
 
-.about_subitem{
+.about_subitem {
     display: flex;
     flex-direction: column;
     flex-basis: 25%;
 }
 
-.about_number{
+.about_number {
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Acherus Grotesque', sans-serif;
     font-weight: bold;
-font-size: 60px;
+    font-size: 60px;
 }
 
-.about_subitem_text{
-    font-family: 'Montserrat', sans-serif;
+.about_subitem_text {
+    font-family: 'Acherus Grotesque', sans-serif;
     padding: 10px;
 }
 
 
 /*FOOTER*/
-.contacts{
+.contacts {
     background-color: var(--main-background);
 }
-.footer_data{
+
+.footer_data {
     display: flex;
     justify-content: space-between;
     align-items: center
 }
 
-.footer_section{
+.footer_section {
     display: flex;
     justify-content: space-between;
     align-items: center
 
 }
 
-.footer_section_item{
-padding: 35px;
+.footer_section_item {
+    padding: 35px;
 }
 
-.links{
+.links {
     padding: 15px;
 }
 
-.links__item{
+.links__item {
     margin-right: 10px;
     text-decoration: none;
     color: white;
 }
 
-.allrights{
+.allrights {
     padding: 15px;
 }
