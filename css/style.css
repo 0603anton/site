@@ -279,7 +279,10 @@ html {
 .price__items {
     display: flex;
     gap: 35px;
+}
 
+.tarif{
+    flex-basis: 33%;
 }
 
 .tarif_features_list {
