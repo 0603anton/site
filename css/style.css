@@ -133,6 +133,7 @@ html {
     font-size: 50px;
     color: white;
     padding: 10px;
+    animation: myAnim 1.3s ease 0s 1 normal forwards;
 }
 
 .welcome__promo_phrase {
@@ -140,7 +141,75 @@ html {
     font-size: 30px;
     color: white;
     padding: 10px;
+    animation: myAnim 3.3s ease 0s 1 normal forwards;
 }
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    /*25% {*/
+    /*    opacity: 1;*/
+    /*    transform: translateY(0);*/
+    /*}*/
+
+    50% {
+        opacity: 1;
+        transform: translateY(-250px);
+    }
+
+   /*75% {*/
+   /*     opacity: 1;*/
+   /*     transform: translateY(0);*/
+   /* }*/
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*.ml6 {*/
+/*    position: relative;*/
+/*    font-weight: 900;*/
+/*    font-size: 3.3em;*/
+/*}*/
+
+/*.ml6 .text-wrapper {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    padding-top: 0.2em;*/
+/*    padding-right: 0.05em;*/
+/*    padding-bottom: 0.1em;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.ml6 .letter {*/
+/*    display: inline-block;*/
+/*    line-height: 1em;*/
+/*}*/
+
+/*.ml6_1 {*/
+/*    position: relative;*/
+
+/*    font-size: 30px;*/
+/*}*/
+
+/*.ml6_1 .text-wrapper {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    padding-top: 0.2em;*/
+/*    padding-right: 0.05em;*/
+/*    padding-bottom: 0.1em;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.ml6_1 .letter {*/
+/*    display: inline-block;*/
+/*    line-height: 1em;*/
+/*}*/
+
 
 .welcome__picture {
     align-self: end;
