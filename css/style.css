@@ -50,20 +50,43 @@ html {
     background-size: 100%;
     background-position: 0 40%;
     height: 100%;
-
+    width: 100%;
+    background-size: cover;
+    animation: change 30s infinite ease-in-out;
 }
 
+@keyframes change {
+    0%{
+        background-image: url("../images/hader_background1_recall.jpg");
+    }
+    25%{
+        background-image: url("../images/hader_background1_recall.jpg");
+    }
+    50%{
+        background-image: url("../images/portf/main2.jpg");
+    }
+    75%{
+        background-image: url("../images/portf/main2.jpg");
+    }
+    100%{
+        background-image: url("../images/portf/main1.jpg");
+    }
+
+}
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
+
+
 .section-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 5px;
+
 }
 
 .header__logo {
@@ -109,9 +132,9 @@ html {
 
 /*WELCOME SECTION*/
 .header {
-    height: 20%;
+    /*height: 20%;*/
+    background-color: rgba(0, 0, 0, 0.2);
 }
-
 /*.welcome-section-height {*/
 /*    height: 100%;*/
 /*}*/
@@ -128,88 +151,27 @@ html {
 
 
 .welcome__promo_about {
+    margin-top: 35px;
+    margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     font-size: 50px;
     color: white;
-    padding: 10px;
-    animation: myAnim 1.3s ease 0s 1 normal forwards;
 }
 
 .welcome__promo_phrase {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: white;
-    padding: 10px;
-    animation: myAnim 3.3s ease 0s 1 normal forwards;
 }
 
-@keyframes myAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(250px);
-    }
-
-    /*25% {*/
-    /*    opacity: 1;*/
-    /*    transform: translateY(0);*/
-    /*}*/
-
-    50% {
-        opacity: 1;
-        transform: translateY(-250px);
-    }
-
-   /*75% {*/
-   /*     opacity: 1;*/
-   /*     transform: translateY(0);*/
-   /* }*/
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.ml13 {
+    text-transform: uppercase;
 }
 
-/*.ml6 {*/
-/*    position: relative;*/
-/*    font-weight: 900;*/
-/*    font-size: 3.3em;*/
-/*}*/
-
-/*.ml6 .text-wrapper {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*    padding-top: 0.2em;*/
-/*    padding-right: 0.05em;*/
-/*    padding-bottom: 0.1em;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.ml6 .letter {*/
-/*    display: inline-block;*/
-/*    line-height: 1em;*/
-/*}*/
-
-/*.ml6_1 {*/
-/*    position: relative;*/
-
-/*    font-size: 30px;*/
-/*}*/
-
-/*.ml6_1 .text-wrapper {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*    padding-top: 0.2em;*/
-/*    padding-right: 0.05em;*/
-/*    padding-bottom: 0.1em;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.ml6_1 .letter {*/
-/*    display: inline-block;*/
-/*    line-height: 1em;*/
-/*}*/
-
+.ml13 .letter {
+    display: inline-block;
+}
 
 .welcome__picture {
     align-self: end;
@@ -261,7 +223,6 @@ html {
     text-decoration: none;
     text-shadow: 0 1px 0 #111211;
     margin: 10px;
-
 }
 
 .myButton:hover {
@@ -350,7 +311,7 @@ html {
     gap: 35px;
 }
 
-.tarif{
+.tarif {
     flex-basis: 33%;
 }
 
@@ -519,6 +480,10 @@ hr {
 
 /* Слайд */
 .slick-slide {
+}
+.slick-slide:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 /* Слайд активный (показывается) */
