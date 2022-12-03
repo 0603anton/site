@@ -20,7 +20,7 @@
             <section class="section-hero">
                 <div class="header__logo">
                     <div class="logo">
-                        <img src="./images/logo3.png" alt="logo">
+                        <img src="./images/kkkk.png" alt="logo">
                     </div>
                 </div>
                 <nav class="header__nav">
@@ -44,19 +44,23 @@
                     <a class="social-links__item" href="">Vkontakte</a>
                 </div>
                 <div class="welcome__promo">
-                    <div>
+                    <div class="animation_container">
                         <div>
-                            <h2 class="welcome__promo_about ml13">
-                                Дизайн проект для квартир и домов
-
-                            </h2>
+                            <h2 class="ml11 welcome__promo_phrase">
+                              <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Создаём впечатляюще-эмоциональные интерьеры</span>
+  </span></h2>
+                            <!--                            <h2 class="welcome__promo_about ml13">-->
+                            <!--                                Создаём впечатляюще-эмоциональные интерьеры-->
+                            <!--                            </h2>-->
                         </div>
                         <a href="#" class="myButton">Заказать</a>
-
+                        <!--                        <h3 class="welcome__promo_phrase">-->
+                        <!--                            Создаём впечатляюще-эмоциональные интерьеры-->
+                        <!--                        </h3>-->
                     </div>
-<!--                    <h3 class="welcome__promo_phrase">-->
-<!--                        Создаём впечатляюще-эмоциональные интерьеры-->
-<!--                    </h3>-->
+
                 </div>
             </section>
 
@@ -280,27 +284,62 @@
     </section>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>-->
+<!--<script>-->
+<!--    // Wrap every letter in a span-->
+<!--    var textWrapper = document.querySelector('.ml13');-->
+<!--    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");-->
+
+<!--    anime.timeline({loop: true})-->
+<!--        .add({-->
+<!--            targets: '.ml13 .letter',-->
+<!--            translateY: [100, 0],-->
+<!--            translateZ: 0,-->
+<!--            opacity: [0, 1],-->
+<!--            easing: "easeOutExpo",-->
+<!--            duration: 1400,-->
+<!--            delay: (el, i) => 300 + 30 * i-->
+<!--        }).add({-->
+<!--        targets: '.ml13 .letter',-->
+<!--        translateY: [0, -100],-->
+<!--        opacity: [1, 0],-->
+<!--        easing: "easeInExpo",-->
+<!--        duration: 1200,-->
+<!--        delay: (el, i) => 100 + 30 * i-->
+<!--    });-->
+<!--</script>-->
+
 <script>
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml13');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    var textWrapper = document.querySelector('.ml11 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
     anime.timeline({loop: true})
         .add({
-            targets: '.ml13 .letter',
-            translateY: [100, 0],
-            translateZ: 0,
-            opacity: [0, 1],
+            targets: '.ml11 .line',
+            scaleY: [0,1],
+            opacity: [0.5,1],
             easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 300 + 30 * i
+            duration: 700
+        })
+        .add({
+            targets: '.ml11 .line',
+            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 700,
+            delay: 100
         }).add({
-        targets: '.ml13 .letter',
-        translateY: [0, -100],
-        opacity: [1, 0],
-        easing: "easeInExpo",
-        duration: 1200,
-        delay: (el, i) => 100 + 30 * i
+        targets: '.ml11 .letter',
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=775',
+        delay: (el, i) => 34 * (i+1)
+    }).add({
+        targets: '.ml11',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
     });
 </script>
 
