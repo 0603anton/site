@@ -30,6 +30,7 @@ html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     /*color: #f4f8ea;*/
+
 }
 
 .hero {
@@ -434,7 +435,7 @@ hr {
 /*ОТЗЫВЫ*/
 .testimonials {
     background-color: var(--main-background);
-    height: 50vh;
+    min-height: 50vh;
 
 }
 
@@ -450,22 +451,58 @@ hr {
     /*padding-left: 200px;*/
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .testimonials__items {
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.testimonials__item{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 320px;
 }
 
 .item__text {
-    padding: 25px;
     color: #6F6C69;
     font-weight: 500;
+    text-indent: 15px;
+    line-height: 1.6;
+    hyphens: auto;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.small{
+    font-size: small;
 }
 
 .item__signature {
-    padding: 25px;
+    padding: 10px;
     font-weight: bold;
     color: #768D87;
+    text-align: right;
 }
+.testimonial-img {
+    float: left;
+    display: inline-block;
+    width: 3.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    align-self: center;
+padding-right: 10px;
+}
+
+/*.testimonial-text {*/
+/*    font-size: 1.8rem;*/
+/*    line-height: 1.8;*/
+/*    margin-bottom: 1.6rem;*/
+/*}*/
 
 
 /*ABOUT STUDIO*/
