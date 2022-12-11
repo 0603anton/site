@@ -5,7 +5,6 @@ $(document).ready(function(){
             infinite: true,
             speed: 300,
             slidesToShow: 3,
-            // variableWidth: true,
             slidesToScroll: 3,
             responsive: [
                 {
@@ -37,20 +36,11 @@ $(document).ready(function(){
 
     );
 
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
+    $('.multiple-items').slick({
+        dots:false,
+        infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
+        slidesToScroll: 3
     });
 
 });
