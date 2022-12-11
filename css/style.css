@@ -48,15 +48,11 @@ html {
 
 
 @keyframes change {
-    0%,52%{
+    0%,54%{
         background-image: url("../images/portf/main_croppped1.png");
     }
-    53%,54%{
-        background-image:  url("../images/portf/main_croppped1.png");
-    }
-
     55%,99%{
-        background-image: url("../images/portf/main_croppped24.jpg");
+        background-image: url("../images/portf/111.png");
     }
 
 }
@@ -303,14 +299,15 @@ html {
 }
 
 .about-items {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 43vh;
+    /*height: 43vh;*/
 }
 
 .about-item {
-    padding: 0 40px;
+    /*padding: 0 40px;*/
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -333,15 +330,15 @@ html {
     text-align: center;
     font-size: var(--heading45);
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     color: #768D87;
 }
 
-.images__portf {
-    display: flex;
-    height: 450px;
-    justify-content: space-around;
-}
+/*.images__portf {*/
+/*    display: flex;*/
+/*    height: 450px;*/
+/*    justify-content: space-around;*/
+/*}*/
 
 .protf__item {
     width: 300px;
@@ -610,12 +607,13 @@ padding-right: 10px;
 .slick-track {
     display: flex;
     align-items: center;
-    padding: 35px 0;
+    /*padding: 35px 0;*/
+    padding-bottom: 30px;
 }
 
 /* Слайд */
 .slick-slide {
-    margin: 0 27px;
+    margin: 0 37px;
     position: relative;
 }
 
@@ -650,6 +648,7 @@ padding-right: 10px;
 
 /* Стрелка */
 .slick-arrow {
+
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -663,6 +662,7 @@ padding-right: 10px;
 .slick-arrow.slick-prev {
     left: 0;
     background: url("../images/arrow-left.svg") 0 0 / 100% no-repeat;
+
 }
 
 /* Стрелка вправо */
