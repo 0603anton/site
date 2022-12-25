@@ -24,6 +24,8 @@
     /*TEXT COLORS*/
     --text-on-dark-background: #6F6C69;
     --light-txt: #ffffff;
+    --text-on-light-background: #242021;
+
 }
 
 body,
@@ -288,13 +290,18 @@ html {
     background-color: var(--main-background);
 }
 
+.projects_commercial {
+    background-color: var(--main-background-light);
+}
+
+
 .section-heading {
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
     padding-left: 20px;
-    color: #242021;
+    color: var(--text-on-light-background);
 }
 
 .section-heading_preim{
@@ -302,7 +309,7 @@ html {
 }
 
 .about-items {
-    padding-top: 20px;
+    padding-top: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -337,6 +344,10 @@ html {
     color: #768D87;
 }
 
+.commercial_project-hading{
+color: var(--text-on-light-background);
+}
+
 /*.images__portf {*/
 /*    display: flex;*/
 /*    height: 450px;*/
@@ -357,7 +368,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 50vh;
+    /*min-height: 50vh;*/
 }
 
 .price__items {
@@ -379,14 +390,13 @@ html {
 }
 
 .tarif_with_border:hover{
-
     transform: scale(1.05);
 }
 
 
 .tarif_features_list {
-    padding: 25px;
-    color: #242021;
+    /*padding: 25px;*/
+    color: var(--text-on-light-background);
     font-weight: 500;
     text-align: center;
 
@@ -422,9 +432,9 @@ html {
 /*TODO color of lines*/
 
 hr {
-    color: #242021;
-    background-color: #242021;
-    border: solid 1px #242021;
+    color: var(--text-on-light-background);
+    background-color: var(--text-on-light-background);
+    border: solid 1px var(--text-on-light-background);
 }
 
 .button__price {
@@ -450,22 +460,26 @@ hr {
 }
 
 .about_number {
-    padding: 10px;
+    padding-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 60px;
-    color: #242021;
+    color: var(--text-on-light-background);
 }
 
 .about_subitem_text {
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    color: #242021;
+    /*padding: 10px;*/
+    color: var(--text-on-light-background);
     font-weight: 500;
+    text-indent: 15px;
+    line-height: 1.2;
+    hyphens: auto;
+    text-align: justify;
 }
 
 .text_under_number{
-    color: #242021;
+    color: var(--text-on-light-background);
     font-weight: 500;
 }
 
@@ -494,7 +508,7 @@ hr {
 }
 
 .footer_section_item {
-    padding: 35px;
+    padding: 20px;
 }
 
 .links {
@@ -722,7 +736,7 @@ display: flex;
 }
 
 .price_text{
-    color: #242021;
+    color: var(--text-on-light-background);
 }
 
 .parent {
@@ -814,8 +828,6 @@ display: flex;
 /*ОТЗЫВЫ*/
 .testimonials {
     background-color: var(--main-background);
-    min-height: 50vh;
-
 }
 
 .readMoreLink{
@@ -888,3 +900,27 @@ padding: 0 70px;
 /*    margin-bottom: 1.6rem;*/
 /*}*/
 
+
+
+.feature-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform .3s; }
+.feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+.feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase; }
