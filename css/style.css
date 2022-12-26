@@ -900,7 +900,14 @@ padding: 0 70px;
 /*    margin-bottom: 1.6rem;*/
 /*}*/
 
+.price_color_main_container{
+    background: var(--main-background-light);
+}
+.container_for_price{
 
+    display: flex;
+    gap: 20px;
+}
 
 .feature-box {
     background-color: rgba(255, 255, 255, 0.8);
