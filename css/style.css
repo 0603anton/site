@@ -91,14 +91,14 @@ html {
 }
 
 .nav-list__item:not(:last-child) {
-    margin-right: 76px;
+    margin-right: 36px;
 }
 
 .link__item {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 50px;
     letter-spacing: 2px;
     color: var(--top-navigation-items-color);
@@ -367,49 +367,58 @@ html {
 padding-bottom: 25px;
 }
 
-.prices {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*min-height: 50vh;*/
-}
+/*.prices {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    !*min-height: 50vh;*!*/
+/*}*/
 
 .price__items {
     display: flex;
     gap: 35px;
+    align-items: flex-start;
+}
 
+.price_h{
+    align-self: center;
 }
 
 .tarif {
-    flex-basis: 33%;
+    flex-basis: 22%;
     text-align: center;
 
 }
 
 .tarif_with_border {
     border-radius: 50px;
-
     transition: 0.3s;
 }
 
-.tarif_with_border:hover {
-    transform: scale(1.05);
-}
+/*.tarif_with_border:hover {*/
+/*    transform: scale(1.05);*/
+/*}*/
 
 
 .tarif_features_list {
     /*padding: 25px;*/
     color: var(--text-on-light-background);
     font-weight: 500;
-    text-align: center;
+    text-align: left ;
+    min-height: 19vh;
 
 }
 
 .tarif_features_item {
-    text-decoration: none;
-    list-style-type: none;
+    /*list-style-type: none;*/
+    padding-left: 10px;
+    line-height: 1.2;
+
 }
 
+.tarif_features_item li{
+    margin-top: 6px;
+}
 
 .tarif_name {
     font-size: 25px;
@@ -422,22 +431,29 @@ padding-bottom: 25px;
 }
 
 .actual_price {
+    color: var(--main-background);
     font-weight: bold;
     font-size: 25px;
 }
 
+
+
 .order {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 /*TODO color of lines*/
 
 hr {
-    color: var(--text-on-light-background);
-    background-color: var(--text-on-light-background);
+    /*color: var(--text-on-light-background);*/
+    /*background-color: var(--text-on-light-background);*/
     /*border: solid 1px var(--text-on-light-background);*/
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, var(--main-background-light),var(--text-on-light-background), var(--main-background-light));
 }
 
 .button__price {
