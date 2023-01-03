@@ -405,7 +405,7 @@ padding-bottom: 25px;
     color: var(--text-on-light-background);
     font-weight: 500;
     text-align: left ;
-    min-height: 19vh;
+    min-height: 22vh;
 
 }
 
@@ -682,7 +682,15 @@ hr {
     background-color: #ffffff;
 }
 
+.overlay_commercial{
+    background-color: black;
+}
+
 .slider__item:hover .overlay {
+    opacity: 0.6;
+}
+
+.slider__item:hover .overlay_commercial {
     opacity: 0.6;
 }
 
@@ -702,6 +710,10 @@ hr {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.text_commercial{
+    color: white;
 }
 
 .metr {
@@ -770,7 +782,7 @@ hr {
     grid-template-rows: repeat(2, 280px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .div1 {
@@ -799,7 +811,7 @@ hr {
     grid-template-rows: repeat(2, 280px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .div6 {
@@ -828,7 +840,7 @@ hr {
     grid-template-rows: repeat(2, 280px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .div11 {
@@ -875,7 +887,7 @@ hr {
     grid-template-rows: repeat(1, 280px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .parent_4 img {
