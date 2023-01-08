@@ -42,6 +42,35 @@
         <div class="welcome-section-height">
             <div class="container welcome_position">
                 <section class="welcome">
+
+
+<!--                    ФОРМА-->
+
+                    <section data-num="0" class="modal modal0 hidden">
+                        <div class="flex_form">
+                            <form class="form" action="https://formsubmit.co/impresds@gmail.com" method="POST">
+                                <label class="preimushestva_text paddingforform" for="name">Имя:</label>
+                                <input id="name" type="text" name="Имя" required>
+
+                                <label class="preimushestva_text paddingforform" for="city">Город:</label>
+                                <input id="city" type="text" name="Город" required>
+
+                                <label class="preimushestva_text paddingforform" for="phone">Телефон:</label>
+                                <input id="phone" type="tel" name="Телефон" required>
+
+                                <label class="preimushestva_text paddingforform" for="other">Краткое описание:</label>
+                                <input id="other" type="text" name="Пожелания">
+
+                                <button class="myButton" type="submit">Отправить</button>
+                                <input type="hidden" name="_next" value="https://imprdesign.ru/thanks.html">
+                            </form>
+                            <button data-num="0" class="btn-close">⨉</button>
+                        </div>
+                    </section>
+                    <div data-num="0" class="overlay_modal overlay_modal0 hidden"></div>
+
+
+
                     <div class="social-links">
                         <a class="social-links__item" href="">Instagram</a>
                         <a class="social-links__item" href="https://www.houzz.ru/pro/webuser-158607520/nash-provans">Houzze</a>
@@ -57,7 +86,7 @@
                         </span></h2>
 
                             </div>
-                            <a href="#" class="myButton">Заказать</a>
+                            <a data-num="0" href="#" class="myButton btn-open" onclick="openModal(`_form`)">Заказать</a>
 
                         </div>
 
@@ -282,7 +311,7 @@
                         <div class="order">
                             <div class="actual_price">$100</div>
                             <div class="order_button">
-                                <a href="#" class="myButton button__price">Подробнее</a>
+                                <a href="./price1.html" class="myButton button__price">Подробнее</a>
                             </div>
                         </div>
                         <hr>
@@ -309,7 +338,7 @@
                         <div class="order">
                             <div class="actual_price">$100</div>
                             <div class="order_button">
-                                <a href="#" class="myButton button__price">Подробнее</a>
+                                <a href="./price1.html" class="myButton button__price">Подробнее</a>
                             </div>
                         </div>
                         <hr>
@@ -319,60 +348,137 @@
         </div>
     </section>
 
-    <!--<section class="price_color_main_container">-->
-    <!--    <div class="container ">-->
-    <!--        <div class="container_for_price">-->
-    <!--            <h2 class="section-heading">Тарифы</h2>-->
-    <!--            <div class="price_box">-->
-    <!--                <div class="feature-box">-->
-    <!--                    <i class="feature-box__icon icon-basic-world"></i>-->
-    <!--                    <h3 class="heading-tertiary u-margin-bottom-small">ТАРИФ-1</h3>-->
-    <!--                    <p class="feature-box__text">-->
-    <!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="price_box">-->
-    <!--                <div class="feature-box">-->
-    <!--                    <i class="feature-box__icon icon-basic-world"></i>-->
-    <!--                    <h3 class="heading-tertiary u-margin-bottom-small">ТАРИФ-1</h3>-->
-    <!--                    <p class="feature-box__text">-->
-    <!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="price_box">-->
-    <!--                <div class="feature-box">-->
-    <!--                    <i class="feature-box__icon icon-basic-world"></i>-->
-    <!--                    <h3 class="heading-tertiary u-margin-bottom-small">ТАРИФ-1</h3>-->
-    <!--                    <p class="feature-box__text">-->
-    <!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-
 
     <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="testimonial__heading">Отзывы</h2>
 
             <!--            МОДАЛЬНЫЕ ДАННЫЕ-->
-
-            <section class="modal hidden">
+            <!--отзыв_1-->
+            <section data-num="1" class="modal modal1 hidden">
                 <div class="flex">
 
                     <p>
-                        This is a dummy newsletter form so don't bother trying to test it. Not
-                        that I expect you to, anyways. :)
+                        "Расскажу о своем проекте в г. Балашиха, живу пока, что один в 3-х комнатной квартире, по
+                        выходным приезжает сын.
+                        Со Светланой познакомился случайно, долго искал с кем делать свой проект и мой выбор стал
+                        очевиден, Светлана.
+                        Так как это мой второй проект и опыт уже имеется, мне все равно было очень сложно во все
+                        вникнуть, но Светлана удаленно по телефону может объяснить так, что я все прекрасно понимал. В
+                        общем чувствуется, что человек красноречивый, что профессионал своего дела. Еще я очень приятно
+                        удивился как Светлана может чувствовать настроение и настрой заказчика. Я очень доволен
+                        результатом, рекомендую.
+                        Светлана, всегда практически доступна, это удивительный человек, который расскажет если, что-то
+                        не понятно, сделает все очень красиво, качественно и стильно.
+                        Большое спасибо за проделанную работу Вам Светлана и Вашей команде."
                     </p>
-                    <button class="btn-close">⨉</button>
+                    <button data-num="1" class="btn-close">⨉</button>
                 </div>
             </section>
-            <div class="overlay_modal hidden"></div>
+            <div data-num="1" class="overlay_modal overlay_modal1 hidden"></div>
 
+
+            <!--отзыв_2-->
+
+            <section data-num="2" class="modal modal2 hidden">
+                <div class="flex">
+
+                    <p>
+                        "Хочу начать отзыв с того, что со Светланой мы знакомы уже около 10 лет, причём сотрудничаем
+                        очень плотно 6 лет. Все началось с идеи нашего руководства сделать ремонт в офисе, площадь
+                        небольшая, все обшарпанное, а задача стояла, как всегда, выполнить недорого, но чтобы глаз
+                        горел. Светлана услышала наши мольбы, и в кратчайшие сроки был выполнен не только эскиз, но и
+                        подобрана высококвалифицированная ремонтная бригада, которая все задумки осуществила (сегодня
+                        ремонту уже 5 лет, состояние превосходное, мебель вся функционирует, шкафы открываются, отделка
+                        стен на месте (использовали сухую смесь - флоки!), просто протираем и все!!! Через год наш офис
+                        стал расширяться, и 300 кв метров старого Сто, с дырками в стенах, отсутствием пола, дверей,
+                        стен нужно было также переделать в функциональный офис с 6 кабинетами, переговорной, столовой,
+                        санузлом и местом для ожидания!!!! Светлана справилась, наши ожидания даже превзошли!!! С
+                        великим удовольствием ходим на работу!! И кто бы не приходил к нам в первый раз-все в
+                        восхищении!!! Стиль Лофт удался!!! Хотя присутствуют и нежные элементы - хрустальные люстры,
+                        роспись на стенах, потолок из профнастила... Казалось бы, несочетаемое!!! Но очень даже!!! И
+                        когда встал вопрос о внутренней отделке загородного дома, то я не думала!!! И тут со Светланой
+                        мы сделали, можно сказать, невозможное!!! Превратили простой дом и баню в уютный загородный дом
+                        и баню!!!!! Я даже представить не могла, как можно сочетать 5 оттенков зелёного в одной комнате.
+                        Но все получилось! На очереди - квартира!!!!
+                        И если резюмировать:
+                        - необычный подход
+                        - сжатые сроки
+                        - скурпулезность
+                        - сочетаемое с несочетаемым
+                        - дикий профессионализм
+                        - отношение, как для себя!!!!
+                        Совет - нужно доверять профессионалам, им виднее!!!! А Светлана таковым является!!!"
+                    </p>
+                    <button data-num="2" class="btn-close">⨉</button>
+                </div>
+            </section>
+            <div data-num="2" class="overlay_modal overlay_modal2 hidden"></div>
+
+            <!--            отзыв_3-->
+            <section data-num="3" class="modal modal3 hidden">
+                <div class="flex">
+
+                    <p>
+                        "Мой отзыв начнётся не с моей квартиры Пришла я к клиентке на разбор гардероба(я стилист) и
+                        попала в произведение искусства. Обычно я по квартире не хожу, но тут попросила "рум тур". Как
+                        же тонко Светлана совместила в квартире восток и европу, я была в приятном шоке и восхищении от
+                        каждой детали и комнат в целом. А самое главное, что я увидела, что пространство квартиры
+                        совпадает с ценностями, характером и душой хозяйки. И я захотела также.
+                        И вот Светлана пришла ко мне. Было много но, какие то предметы интерьера необходимо было
+                        оставить, а главное, как то вписать. Света задавала много вопросов, но я хотела просто доверять.
+                        Как доверяют мне и получается роскошь, я хотела тоже шедевра. Поэтому сказала, я доверяю, твори
+                        и рассказывай. Но есть еще и бюджет . А ещё возможный переезд. И я хочу все предметы интерьера
+                        туда забрать и чтобы они тоже вписались в другое пространство гармонично. В общем Света
+                        превзошла все ожидания. Что то было с алишки, что то местное, некоторые предметы были под заказ
+                        с Москвы. Но главное, все это сочеталось со мной и моей семьёй. В общем можно целую книгу
+                        написать, как я в восторге. Это лучший дизайнер из всех чьи работы я видела. А главное, что
+                        индивидуальный подход. А все мы разные и бюджет у нас тоже отличается. Светлана, благодарю тебя.
+                        Я в восторге и моя семья тоже. Ждём ещё некоторые предметы интерьера. До скорых встреч. Кто ещё
+                        ищет дизайнера, вы его нашли. Это Светлана. И еще, у вас всё получится, если вы будете
+                        доверять."
+                    </p>
+                    <button data-num="3" class="btn-close">⨉</button>
+                </div>
+            </section>
+            <div data-num="3" class="overlay_modal overlay_modal3 hidden"></div>
+
+            <!--            отзыв_4-->
+            <section data-num="4" class="modal modal4 hidden">
+                <div class="flex">
+
+                    <p>
+                        "Хочу от всего сердца поблагодарить Светлану за высокий профессионализм, начиная от консультации
+                        и заканчивая превосходным проектом дачного дома! Подбор материалов в великолепном соотношении
+                        цена/качество!!! Материалы доступные по цене, а результат выше всяких похвал в жизни намного
+                        лучше, чем на проекте!!! В этой организации изучат все ваши предпочтения и выдадут по истине
+                        великолепный результат!!! Я крайне притязательный клиент, но проект меня поразил и превзошел
+                        любые мои ожидания Браво Impression Design"
+                    </p>
+                    <button data-num="4" class="btn-close">⨉</button>
+                </div>
+            </section>
+            <div data-num="4" class="overlay_modal overlay_modal4 hidden"></div>
+
+            <!--            отзыв_5-->
+            <section data-num="5" class="modal modal5 hidden">
+                <div class="flex">
+
+                    <p>
+                        "Всегда приятно встречать на своём профессиональном пути коллег, сотрудничество с которыми
+                        приносит не только позитивные эмоции,но и творческие, креативные решения, которые в будущем
+                        создают уют и радуют глаз.
+                        Интерьеры Светланы всегда интересные, функциональные.С первого взгляда видна смелая и
+                        профессиональная работа с цветом, что в нынешнее время облегчённых и светлых решений в
+                        большинстве своём уже становится редкостью.Внимательное отношение к мелочам и большое желание
+                        творить, создают особую атмосферу комфорта и конечный результат, выполненный на все 100%.Очень
+                        надеюсь на дальнейшее сотрудничество и дружбу.
+                        С большим уважением и симпатией, дизайнер салона текстильного оформления "Анкара "
+                    </p>
+                    <button data-num="5" class="btn-close">⨉</button>
+                </div>
+            </section>
+            <div data-num="5" class="overlay_modal overlay_modal5 hidden"></div>
 
             <!--            МОДАЛЬНЫЕ ДАННЫЕ-->
 
@@ -408,7 +514,12 @@
                         очевиден, Светлана.
                         Так как это мой второй проект и опыт уже имеется...
                         <!--                        КНОПКА-->
-                        <button class="btn btn-open">полный отзыв</button>
+
+                        <button data-num="1" class="btn btn-open">Читать полный отзыв
+                            &#8594;
+                        </button>
+
+                        <!--                        КНОПКА-->
                     </blockquote>
                     <div class="item__signature">
                         <span>&mdash; Алексей Хохлов</span><br>
@@ -418,28 +529,6 @@
                 </figure>
 
 
-                <figure class="testimonials__item">
-                    <img
-                            class="testimonial-img"
-                            alt="Logo of customer Coffee Cup"
-                            src="images/comments/main_blue.png"
-                    />
-                    <blockquote class="item__text">
-                        "Расскажу о своем проекте в г. Балашиха, живу пока, что один в 3-х комнатной квартире, по
-                        выходным приезжает сын.
-                        Со Светланой познакомился случайно, долго искал с кем делать свой проект и мой выбор стал
-                        очевиден, Светлана.
-                        Так как это мой второй проект и опыт уже имеется... <a
-                            href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
-                            class="readMoreLink">Читать
-                        дальше...</a>
-                    </blockquote>
-                    <div class="item__signature">
-                        <span>&mdash; Алексей Хохлов</span><br>
-                        <span class="item__text small">Квартира 100 м<sup>2</sup></span>
-                    </div>
-
-                </figure>
                 <figure class="testimonials__item">
                     <img
                             class="testimonial-img"
@@ -450,13 +539,20 @@
                         "Хочу начать отзыв с того, что со Светланой мы знакомы уже около 10 лет, причём сотрудничаем
                         очень плотно 6 лет. Все началось с идеи нашего руководства сделать ремонт в офисе, площадь
                         небольшая, все обшарпанное, а задача стояла, как всегда, выполнить недорого, но чтобы глаз
-                        горел...<br> <a
-                            href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
-                            class="readMoreLink">Читать дальше...</a>
+                        горел..."
+                        <br>
+                        <!--                        КНОПКА-->
+
+                        <button data-num="2" class="btn btn-open">Читать полный отзыв
+                            &#8594;
+                        </button>
+
+                        <!--                        КНОПКА-->
+
                     </blockquote>
                     <div class="item__signature">
-                        <span>&mdash; Кто-то</span><br>
-                        <span class="item__text small">Какая-то квартира 40 м<sup>2</sup></span>
+                        <span>&mdash; Аноним</span><br>
+                        <span class="item__text small">Квартира 100 м<sup>2</sup></span>
                     </div>
 
                 </figure>
@@ -471,8 +567,13 @@
                         попала в произведение искусства. Обычно я по квартире не хожу, но тут попросила "рум тур". Как
                         же тонко Светлана совместила в квартире восток и европу, я была в приятном шоке и восхищении ...
                         <br>
-                        <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
-                           class="readMoreLink">Читать дальше...</a>
+                        <!--                        КНОПКА-->
+
+                        <button data-num="3" class="btn btn-open">Читать полный отзыв
+                            &#8594;
+                        </button>
+
+                        <!--                        КНОПКА-->
                     </blockquote>
                     <div class="item__signature">
                         <span>&mdash; Наталья Вялушкина</span><br>
@@ -493,8 +594,13 @@
                         цена/качество!!! Материалы доступные по цене, а результат выше всяких похвал в жизни намного
                         лучше, чем на проекте!!! В этой организации ...
                         <br>
-                        <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
-                           class="readMoreLink">Читать дальше...</a>
+                        <!--                        КНОПКА-->
+
+                        <button data-num="4" class="btn btn-open">Читать полный отзыв
+                            &#8594;
+                        </button>
+
+                        <!--                        КНОПКА-->
                     </blockquote>
                     <div class="item__signature">
                         <span>&mdash; Кто-то</span><br>
@@ -516,12 +622,36 @@
                         Интерьеры Светланы всегда интересные, функциональные.С первого взгляда видна смелая и
                         профессиональная ...
                         <br>
-                        <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
-                           class="readMoreLink">Читать дальше...</a>
+                        <!--                        КНОПКА-->
+
+                        <button data-num="5" class="btn btn-open">Читать полный отзыв
+                            &#8594;
+                        </button>
+
+                        <!--                        КНОПКА-->
                     </blockquote>
                     <div class="item__signature">
-                        <span>&mdash; Кто-то</span><br>
+                        <span>&mdash; Селюк Алена</span><br>
                         <span class="item__text small">Квартира 80 м<sup>2</sup></span>
+                    </div>
+
+                </figure>
+
+                <figure class="testimonials__item">
+                    <img
+                            class="testimonial-img"
+                            alt="Logo of customer Coffee Cup"
+                            src="images/comments/main_blue.png"
+                    />
+                    <blockquote class="item__text">
+
+                        <br>
+                        <a href="https://www.houzz.ru/professionaly/dizaynery-interyera/nash-provans-pfvwru-pf~154145655?"
+                           class="readMoreLink">Больше отзывов на Houzze...</a>
+                    </blockquote>
+                    <div class="item__signature">
+                        <span></span><br>
+                        <span class="item__text small"><sup>2</sup></span>
                     </div>
 
                 </figure>

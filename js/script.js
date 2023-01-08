@@ -45,3 +45,41 @@ $(document).ready(function(){
 
 });
 
+// const modal = document.querySelector(".modal");
+// const overlay = document.querySelector(".overlay_modal");
+// const openModalBtn = document.querySelector(".btn-open");
+// const closeModalBtn = document.querySelector(".btn-close");
+//
+// function hide(e){
+//     e.currentTarget.style.visibility = "hidden";
+//     // Когда данная функция используется в качестве обработчика события: this === e.currentTarget
+// }
+
+const openModal = function (id) {
+    document.querySelector(`.modal`+id).classList.remove("hidden");
+    document.querySelector(`.overlay_modal`+id).classList.remove("hidden");
+};
+
+const closeModal = function (id) {
+    document.querySelector(`.modal`+id).classList.add("hidden");
+    document.querySelector(`.overlay_modal`+id).classList.add("hidden");
+};
+
+document.querySelectorAll('.btn-open').forEach(item => {
+    item.addEventListener('click', event => {
+        openModal(event.currentTarget.dataset.num)
+    })
+})
+
+document.querySelectorAll('.btn-close').forEach(item => {
+    item.addEventListener('click', event => {
+        closeModal(event.currentTarget.dataset.num)
+    })
+})
+document.querySelectorAll('.overlay_modal').forEach(item => {
+    item.addEventListener('click', event => {
+        closeModal(event.currentTarget.dataset.num)
+    })
+})
+
+
