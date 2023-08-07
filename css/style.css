@@ -99,19 +99,20 @@ html {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     letter-spacing: 2px;
     color: var(--top-navigation-items-color);
     text-decoration: none;
     transition: 0.7s;
 }
 
-.link__item_footer{
+.link__item_footer {
     text-decoration: none;
     color: var(--text-on-dark-background);
     font-weight: 500;
     padding: 5px 0px;
 }
+
 /*.link__item:hover,*/
 /*.link__item:active {*/
 /*    color: wheat;*/
@@ -370,7 +371,7 @@ html {
 /*PRICE*/
 .price {
     background-color: var(--main-background-light);
-padding-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 /*.prices {*/
@@ -386,7 +387,7 @@ padding-bottom: 25px;
     align-items: flex-start;
 }
 
-.price_h{
+.price_h {
     align-self: center;
 }
 
@@ -396,10 +397,6 @@ padding-bottom: 25px;
 
 }
 
-.tarif_with_border {
-    border-radius: 50px;
-    transition: 0.3s;
-}
 
 /*.tarif_with_border:hover {*/
 /*    transform: scale(1.05);*/
@@ -410,7 +407,7 @@ padding-bottom: 25px;
     /*padding: 25px;*/
     color: var(--text-on-light-background);
     font-weight: 500;
-    text-align: left ;
+    text-align: left;
     min-height: 22vh;
 
 }
@@ -422,7 +419,7 @@ padding-bottom: 25px;
 
 }
 
-.tarif_features_item li{
+.tarif_features_item li {
     margin-top: 6px;
 }
 
@@ -439,9 +436,8 @@ padding-bottom: 25px;
 .actual_price {
     color: var(--main-background);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
 }
-
 
 
 .order {
@@ -459,7 +455,7 @@ hr {
     border: 0;
     height: 2px;
     background: #333;
-    background-image: linear-gradient(to right, var(--main-background-light),var(--text-on-light-background), var(--main-background-light));
+    background-image: linear-gradient(to right, var(--main-background-light), var(--text-on-light-background), var(--main-background-light));
 }
 
 .button__price {
@@ -476,12 +472,13 @@ hr {
 .about_studio-items {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
 .about_subitem {
     display: flex;
     flex-direction: column;
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 
 .about_number {
@@ -497,10 +494,10 @@ hr {
     /*padding: 10px;*/
     color: var(--text-on-light-background);
     font-weight: 500;
-    text-indent: 15px;
-    line-height: 1.2;
+    /*text-indent: 15px;*/
+    line-height: 1.4;
     hyphens: auto;
-    text-align: justify;
+    text-align: left;
 }
 
 .text_under_number {
@@ -688,12 +685,12 @@ hr {
     background-color: #ffffff;
 }
 
-.overlay_commercial{
+.overlay_commercial {
     background-color: black;
 }
 
 .slider__item:hover .overlay {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .slider__item:hover .overlay_commercial {
@@ -718,7 +715,7 @@ hr {
     text-align: center;
 }
 
-.text_commercial{
+.text_commercial {
     color: white;
 }
 
@@ -744,10 +741,14 @@ hr {
 }
 
 .portfolio_project_description {
+    /*text-indent: 15px;*/
+    text-align: center;
     color: var(--text-on-dark-background);
     font-weight: 500;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .portf_description h2 {
@@ -929,7 +930,7 @@ hr {
     scale: 1.5;
 }
 
-.bottom_portf{
+.bottom_portf {
     padding-bottom: 25px;
 }
 
@@ -1064,8 +1065,8 @@ hr {
     min-height: 250px;
     position: absolute;
     top: 20%;
-    left:50%;
-    margin-left:-225px;
+    left: 50%;
+    margin-left: -225px;
     background-color: var(--main-background);
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -1140,18 +1141,86 @@ button {
 }
 
 /*ФОРМА*/
-.form{
+.form {
     display: flex;
     flex-direction: column;
 
 }
-.flex_form{
+
+.flex_form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.paddingforform{
+.paddingforform {
     padding: 5px 0 5px 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+        gap: 5px;
+    }
+
+    .nav-list__item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .link__item {
+        font-size: 15px;
+        padding-bottom: 35px;
+    }
+
+    .about-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-item h2 {
+        padding-bottom: 15px;
+    }
+
+    .about-item {
+        flex-basis: 51%;
+        padding-bottom: 35px;
+
+    }
+
+    .section-heading {
+        transform: none;
+        writing-mode: horizontal-tb;
+        padding: 0 0 35px 0;
+        align-items: center;
+    }
+/*    Imppression center*/
+
+    .price__items{
+        /*flex-wrap: wrap;*/
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tarif{
+        flex-basis: 51%;
+    }
+    .order{
+        padding-top: 15px;
+        flex-direction: column;
+    }
+    .about_studio-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_subitem{
+        padding: 0 35px;
+    }
+    .footer_data{
+        flex-direction: column;
+    }
+}
+
+
 
